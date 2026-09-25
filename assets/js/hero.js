@@ -104,7 +104,7 @@
     ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
   }
   function step(dt) {
-    spawnAcc += dt * 10; // about 10 items a second: the pace measured in the iPhone simulator
+    spawnAcc += dt * 10; // about 10 items a second: the pace measured on iPhone
     while (spawnAcc > 1) { spawnAcc -= 1; particles.push({ t: 0.5, phase: 0, qi: 1, speed: 0.16 + Math.random() * 0.04 }); }
     for (var i = particles.length - 1; i >= 0; i--) {
       var p = particles[i];

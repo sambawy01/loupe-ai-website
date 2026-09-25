@@ -157,7 +157,6 @@ def page_home(lang):
         tabs += f'<button role="tab" id="tab-{key}" aria-controls="shot-panel" aria-selected="{"true" if i==0 else "false"}" data-cap="{esc(cap)}">{lab}</button>'
         srcattr = 'src' if i == 0 else 'data-src'; ssattr = 'srcset' if i == 0 else 'data-srcset'
         imgs += f'<img {srcattr}="/assets/img/shots/{key}-360.webp" {ssattr}="/assets/img/shots/{key}-360.webp 360w, /assets/img/shots/{key}-720.webp 720w" sizes="300px" alt="{esc(cap)}" width="360" height="782" loading="lazy" decoding="async"{" class=on" if i==0 else ""}>'
-    hon = "".join(f"<li>{x}</li>" for x in h['hon'])
     pl = "".join(f"<li>{x}</li>" for x in h['priv_list'])
     canvas_labels = esc(json.dumps(h['canvas'], ensure_ascii=False))
     body = f"""{header(lang, '/')}
@@ -243,7 +242,6 @@ def page_home(lang):
 <p class="eyebrow">{h['run_eyebrow']}</p><h2>{h['run_h']}</h2><p style="color:var(--ink2)">{h['run_p']}</p><p style="color:var(--ink2)">{h['run_p2']}</p>
 <div class="stats">{rstats}</div>
 <p class="small">{h['run_src']}</p>
-<p class="note">{h['run_honest']}</p>
 </div>
 <div class="reveal" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
 <div class="phone" style="width:min(250px,42vw)"><div class="screen"><img class="on" src="/assets/img/shots/live-run-360.webp" srcset="/assets/img/shots/live-run-360.webp 360w, /assets/img/shots/live-run-720.webp 720w" sizes="250px" alt="{esc(h['shots'][1][2])}" width="360" height="782" loading="lazy" decoding="async"></div></div>
@@ -263,12 +261,6 @@ def page_home(lang):
 <div class="mac" style="margin-top:22px"><div class="screen"><div class="ph"><img src="/assets/img/mascot-320.webp" alt="" width="90" height="100" loading="lazy">{h['mac_ph']}</div></div><div class="base"></div></div>
 </div>
 </div>
-</div>
-</section>
-
-<section id="honest">
-<div class="wrap">
-<div class="honest reveal"><p class="eyebrow" style="color:var(--amber)">{h['hon_eyebrow']}</p><h2>{h['hon_h']}</h2><ul>{hon}</ul></div>
 </div>
 </section>
 
@@ -298,8 +290,7 @@ def page_features(lang):
 <div><h2>{F['ios_h']}</h2><p class="small mono">{F['ios_sub']}</p><ul class="feat-list">{lst(F['ios'])}</ul></div>
 <div><h2>{F['mac_h']}</h2><p class="small mono">{F['mac_sub']}</p><ul class="feat-list">{lst(F['mac'])}</ul></div>
 </div></section>
-<section><div class="wrap"><div class="honest"><p class="eyebrow" style="color:var(--amber)">{h['hon_eyebrow']}</p><h2>{h['hon_h']}</h2><ul>{"".join(f"<li>{x}</li>" for x in h['hon'])}</ul></div>
-<div class="cta-row" style="margin-top:32px">{mac_button(lang)}{ios_badge(lang)}</div></div></section>
+<section><div class="wrap"><div class="cta-row">{mac_button(lang)}{ios_badge(lang)}</div></div></section>
 </main>
 """
     return head(lang, '/features/', F['title'], L[lang]['site_desc']) + body + footer(lang)
