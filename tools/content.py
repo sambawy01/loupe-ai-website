@@ -91,7 +91,7 @@ HOME = {
   "h1": "Teach it a judgment.<br><span class=\"accent\">It decides on your device.</span>",
   "lede": "Write what you care about in plain words — “receipts I'll need at tax time”, “is this really from my bank?”. Loupe applies it across your photos, files, mail, calendar and contacts, shows you what it's unsure about, learns from your answers, and nothing leaves the device.",
   "cta_mac": "Download for Mac", "cta_ios_top": "Coming to the",
-  "stats": [("10–14", "decisions/s on iPhone"), ("0 B", "sent from your stuff"), ("100+", "languages the model reads")],
+  "stats": [("10–14", "decisions per second, on-device"), ("0 B", "sent from your stuff"), ("100+", "languages the model reads")],
   "stage_caption": "Illustration of the app's live run view, animated in your browser",
   "hud": ["items decided", "per second"],
   "canvas": {"read": "Read", "decide": "Decide", "q1": "receipt?", "q2": "for tax?", "q3": "sure?", "sorted": "Sorted", "needs": "Needs you", "flag": "Flagged",
@@ -141,7 +141,7 @@ HOME = {
   "run_p": "Every long job shows itself as a loop of stages around the mascot — the engine. One particle per real item, each question diamond showing its latest answer and confidence, and cards for who answered, where items went, and what asking a cloud model would have cost instead.",
   "run_p2": "<b>Riverflight</b> is a river shooter where Laya flies. It decides many times a second with its raw probability bars on screen, against a dumb autopilot on the same river.",
   "run_stats": [("60 fps", "steady, Laya flying"), ("10–14/s", "decisions"), ("~63 ms", "p50 latency"), ("~82 ms", "p95 latency")],
-  "run_src": "Measured on iPhone 17 Pro Max, 25 Sep 2026.",
+  "run_src": "Measured 25 Sep 2026.",
 
   "dev_eyebrow": "The apps",
   "dev_h": "Real screens, dark neon",
@@ -165,7 +165,7 @@ HOME = {
   "h1": "علّمه حُكمًا.<br><span class=\"accent\">ويقرّر على جهازك.</span>",
   "lede": "اكتب ما يهمّك بكلمات بسيطة — «الإيصالات التي سأحتاجها وقت الضرائب»، «هل هذه الرسالة من بنكي فعلًا؟». يطبّق Loupe ذلك على صورك وملفاتك وبريدك وتقويمك وجهات اتصالك، ويُريك ما لا يثق به، ويتعلّم من إجاباتك، ولا يغادر جهازك شيء.",
   "cta_mac": "تنزيل لأجهزة Mac", "cta_ios_top": "قريبًا على",
-  "stats": [("10–14", "قرارًا في الثانية على iPhone"), ("0 بايت", "تُرسَل من بياناتك"), ("+100", "لغة يقرؤها النموذج")],
+  "stats": [("10–14", "قرارًا في الثانية على الجهاز"), ("0 بايت", "تُرسَل من بياناتك"), ("+100", "لغة يقرؤها النموذج")],
   "stage_caption": "توضيح لعرض التشغيل المباشر في التطبيق، يتحرّك داخل متصفحك",
   "hud": ["عنصرًا تقرّر", "في الثانية"],
   "canvas": {"read": "قراءة", "decide": "قرار", "q1": "إيصال؟", "q2": "للضرائب؟", "q3": "متأكد؟", "sorted": "رُتِّب", "needs": "يحتاجك", "flag": "مُعلَّم",
@@ -215,7 +215,7 @@ HOME = {
   "run_p": "كل مهمة طويلة تعرض نفسها كحلقة من المراحل حول الروبوت — المحرّك. جسيم لكل عنصر حقيقي، وكل معيّن سؤال يعرض آخر إجابة وثقتها، وبطاقات لمن أجاب، وأين ذهبت العناصر، وكم كان سيكلّف سؤال نموذج سحابي بدلًا من ذلك.",
   "run_p2": "<b>Riverflight</b> لعبة إطلاق نار على نهر يقودها Laya. يقرّر مرات عديدة في الثانية وأشرطة احتمالاته الخام على الشاشة، في مواجهة طيّار آلي بسيط على النهر نفسه.",
   "run_stats": [("60 fps", "ثابتة، Laya يقود"), ("10–14/ث", "قرارًا"), ("~63 ms", "زمن p50"), ("~82 ms", "زمن p95")],
-  "run_src": "مقاسة على iPhone 17 Pro Max، ‏25 سبتمبر 2026.",
+  "run_src": "قيست في 25 سبتمبر 2026.",
 
   "dev_eyebrow": "التطبيقات",
   "dev_h": "شاشات حقيقية، نيون داكن",
@@ -251,7 +251,7 @@ ICONS = {
 
 DIFFS = {
  "en": [
-  ("words", "Judgments in plain words, run on the device", "Write a question the way you'd ask a friend. Laya — a ~320M-parameter decision model — turns it into a yes/no, pick-one or score decision and runs it on your phone or Mac. It doesn't generate text; it decides.", "~10 decisions/s on iPhone"),
+  ("words", "Judgments in plain words, run on the device", "Write a question the way you'd ask a friend. Laya — a ~320M-parameter decision model — turns it into a yes/no, pick-one or score decision and runs it on your phone or Mac. It doesn't generate text; it decides.", "~10 decisions/s, on-device"),
   ("device", "Nothing leaves the device", "Your photos, files, calendar and contacts are read on the device and never sent to us. No account, no analytics. Airplane mode: everything still works.", "0 bytes out"),
   ("unsure", "It shows what it's unsure about — and when a keyword search beats it", "You only review what it's torn on. Every judgment is measured against the dumb version — a keyword rule — and if the rule wins, Loupe says so and offers to use it.", "baseline check on every judgment"),
   ("cross", "Cross-source decisions", "One judgment spans everything: “receipts I'll need at tax time” returns email attachments, photographed paper, PDFs and spreadsheet rows in one list.", "photos · files · mail · calendar · contacts · web"),
@@ -263,7 +263,7 @@ DIFFS = {
   ("write", "Writing assistant: opt-in, your key, drafts only", "Off by default. Bring your own provider key (or Ollama on your network) and it drafts replies and second opinions — labelled drafts that wait for your approval. Judgments never depend on it.", "never sends anything as you"),
  ],
  "ar": [
-  ("words", "أحكام بكلمات بسيطة، تعمل على الجهاز", "اكتب سؤالًا كما تسأل صديقًا. يحوّله Laya — نموذج قرار بحجم ~320 مليون معامل — إلى قرار نعم/لا أو اختيار أو درجة، ويشغّله على هاتفك أو Mac. لا يولّد نصًا؛ بل يقرّر.", "~10 قرارات/ث على iPhone"),
+  ("words", "أحكام بكلمات بسيطة، تعمل على الجهاز", "اكتب سؤالًا كما تسأل صديقًا. يحوّله Laya — نموذج قرار بحجم ~320 مليون معامل — إلى قرار نعم/لا أو اختيار أو درجة، ويشغّله على هاتفك أو Mac. لا يولّد نصًا؛ بل يقرّر.", "~10 قرارات/ث على الجهاز"),
   ("device", "لا شيء يغادر الجهاز", "تُقرأ صورك وملفاتك وتقويمك وجهات اتصالك على الجهاز ولا تُرسَل إلينا أبدًا. لا حساب ولا تحليلات. في وضع الطيران يعمل كل شيء.", "0 بايت للخارج"),
   ("unsure", "يُريك ما لا يثق به — وحين يتفوّق عليه بحث الكلمات", "لا تراجع إلا ما يتردد فيه. كل حُكم يُقاس مقابل النسخة البسيطة — قاعدة كلمات مفتاحية — وإن تفوّقت القاعدة يقول Loupe ذلك ويعرض استخدامها.", "مقارنة بالأساس لكل حُكم"),
   ("cross", "قرارات عبر المصادر", "حُكم واحد يشمل كل شيء: «الإيصالات التي سأحتاجها للضرائب» يعيد مرفقات البريد والأوراق المصوّرة وملفات PDF وصفوف الجداول في قائمة واحدة.", "صور · ملفات · بريد · تقويم · جهات اتصال · ويب"),

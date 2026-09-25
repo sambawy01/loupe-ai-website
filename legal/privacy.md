@@ -38,7 +38,7 @@ Loupe stores what it needs (the items it has read, its decisions, your correctio
 ### Loupe for iPhone
 - **Gmail (Google sign-in).** Loupe asks Google for one permission: **`gmail.readonly`** (read your email). It uses the Gmail API with read-only requests to download recent Inbox messages (the last 30 days, up to 200, then new ones). Messages go directly from Google to your iPhone and are stored only on your iPhone. Loupe cannot send, delete, move, label or mark mail as read. The sign-in token is kept in the iOS Keychain.
 - **Other mail (IMAP).** With an app password you enter, Loupe reads mail over an encrypted connection directly from your provider (for example iCloud or Fastmail), without marking anything as read. The password stays in the iOS Keychain.
-- **Microsoft / Outlook sign-in** is not yet available on iPhone. [UPDATE IF ADDED]
+- **Microsoft / Outlook sign-in** is not yet available on iPhone.
 
 ### Loupe Station for Mac
 Loupe Station can read mail and, only when you approve it, **add** `Laya/...` labels (categories on Outlook) and save a reply **draft** in the thread. It never sends, replies, forwards, deletes, archives, moves or marks mail as read.
