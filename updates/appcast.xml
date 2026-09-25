@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sparkle appcast for Loupe Station. Read by the app at https://loupe-ai.com/updates/appcast.xml (SUFeedURL).
+     Placeholder: no releases yet. Add each signed <item> (from laya-studio macos/dist/appcast-item.xml)
+     newest first, AFTER its DMG is uploaded. Serve with Cache-Control: max-age=300. -->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Loupe Station</title>
+    <link>https://loupe-ai.com/updates/appcast.xml</link>
+    <description>Updates for Loupe Station for Mac.</description>
+    <language>en</language>
+  </channel>
+</rss>

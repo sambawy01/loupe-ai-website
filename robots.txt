@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://loupe-ai.com/sitemap.xml
