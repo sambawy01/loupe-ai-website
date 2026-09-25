@@ -6,7 +6,7 @@ Effective date: 26 September 2026 · Applies to: Loupe for iPhone (`com.loupe-ai
 These terms are an agreement between you and Hany Sadek, trading as Loupe ("we"), of Hurghada, Egypt. If Loupe later moves to a company, that company will take over these terms and we will tell you. By installing or using Loupe you agree to them. Our [Privacy Policy](https://loupe-ai.com/privacy) explains how data is handled.
 
 ## 1. Licence
-We give you a personal, non-exclusive, non-transferable, revocable licence to use Loupe on devices you own or control, for your own purposes, under these terms. For Loupe for iPhone, Apple's Licensed Application End User License Agreement also applies, and Apple is not responsible for the app or its support; Apple is a third-party beneficiary of these terms. Open-source components and the Laya model are licensed under their own licences, listed in the app (Me → Licences).
+We give you a personal, non-exclusive, non-transferable, revocable licence to use Loupe on devices you own or control, for your own purposes, under these terms. For Loupe for iPhone, Apple's Licensed Application End User License Agreement also applies, and Apple is not responsible for the app or its support; Apple is a third-party beneficiary of these terms. Open-source components and the Loupe Decision Model are licensed under their own licences, listed in the app (Me → Licences).
 
 ## 2. Beta and test status
 Loupe is in development and may be offered as a beta (including through TestFlight). Features may change, break or be removed, and data on your device may need to be reset. Keep your own copies of anything important.

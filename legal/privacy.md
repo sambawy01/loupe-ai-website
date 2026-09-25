@@ -11,7 +11,7 @@ Contact: privacy@loupe-ai.com. We are the controller only for the small amount o
 
 ## 2. The short version
 
-- **Loupe decides on your device.** Its decision model, Laya, runs on your iPhone or Mac. Your photos, files, calendar, contacts and mail are read there and are not sent to us.
+- **Loupe decides on your device.** Its decision model, the Loupe Decision Model, runs on your iPhone or Mac. Your photos, files, calendar, contacts and mail are read there and are not sent to us.
 - **No account.** You do not sign up with Loupe. We do not know who you are.
 - **No analytics, advertising or tracking.** The apps contain no analytics, crash-reporting or advertising SDKs, and we do not sell or share personal information.
 - **Online features are optional.** Features that need the internet are off by default, labelled **Online** each time they show a result, and can each be turned off. With them off, Loupe works offline.
@@ -58,7 +58,7 @@ Loupe's use and transfer of information received from Google APIs to any other a
 - is **not** read by any human at Loupe, unless you ask us to and agree (for example, you send us an email for support), it is needed for security (such as investigating abuse), or it is required by law. Because Gmail data stays on your device, in practice we have no access to it.
 
 ## 5. Browser protection (Loupe Station)
-The Loupe Station browser extension (Chrome, Edge, Brave, Arc) talks only to Loupe Station on your Mac. On each page it sends to your Mac the address (without the `#` part), title, up to 4,000 characters of visible text, facts about forms (whether there is a password, card or email field and where the form posts), link counts and the site name. It **never** collects what you type, cookies, site storage, keystrokes or screenshots, and it skips private windows (unless you allow them), your trusted sites, local-network pages and browser pages. Page text is used in memory and never written. A history of checks is kept on your Mac (`browser.db`): time, host, a shortened path without query or ID segments, the verdict and reasons, a SHA-256 hash and length of the text, which browser, and any feedback you give — never the page text or title. It is kept for 30 days by default (adjustable from 1 to 365), purged at start-up and on each write, and **Clear history** deletes it at once. Separately, Loupe Station's decision ledger (`ledger.db`) keeps hashed page addresses and Laya's answers with **no time limit by default**, until you set 30, 90, 180 or 365 days.
+The Loupe Station browser extension (Chrome, Edge, Brave, Arc) talks only to Loupe Station on your Mac. On each page it sends to your Mac the address (without the `#` part), title, up to 4,000 characters of visible text, facts about forms (whether there is a password, card or email field and where the form posts), link counts and the site name. It **never** collects what you type, cookies, site storage, keystrokes or screenshots, and it skips private windows (unless you allow them), your trusted sites, local-network pages and browser pages. Page text is used in memory and never written. A history of checks is kept on your Mac (`browser.db`): time, host, a shortened path without query or ID segments, the verdict and reasons, a SHA-256 hash and length of the text, which browser, and any feedback you give — never the page text or title. It is kept for 30 days by default (adjustable from 1 to 365), purged at start-up and on each write, and **Clear history** deletes it at once. Separately, Loupe Station's decision ledger (`ledger.db`) keeps hashed page addresses and the decision model's answers with **no time limit by default**, until you set 30, 90, 180 or 365 days.
 
 ## 6. Optional online features
 Each is **off by default**, has its own switch, and every result says **Online**, names its source and shows when it was fetched. They send the minimum needed for the request — never your files, photos, mail, decisions or corrections.
@@ -83,7 +83,7 @@ The lists (Phishing.Database, MIT licence; optionally OpenPhish, off by default,
 ### 6.3 Google Safe Browsing (iPhone)
 Uses **your own** Google API key. Your iPhone keeps Google's list of hash prefixes; only if a link matches it locally are **4-byte hash prefixes** sent to Google (Safe Browsing API v5) — never the link. Governed by [Google's Privacy Policy](https://policies.google.com/privacy). (On Loupe Station this option is not yet available.)
 
-### 6.4 Laya model download
+### 6.4 Loupe Decision Model download
 The decision model (about 418 MB) is downloaded once, after you agree, on iPhone from [MODEL HOST], which receives a normal download request (your IP address, device type). On Mac, the model is downloaded from Hugging Face ([privacy policy](https://huggingface.co/privacy)) into `~/Library/Application Support/Loupe Station/models/hub`. Until a host is set, the iPhone app makes no request.
 
 ### 6.5 Writing assistant (off by default)
