@@ -1,8 +1,8 @@
 /* Site configuration. PLACEHOLDERS — replace before launch (see README.md).
    The anon key is public by design (RLS allows INSERT only). Never put a service-role key here. */
 window.LOUPE_CONFIG = {
-  SUPABASE_URL: "https://YOUR-PROJECT-REF.supabase.co",      // TODO: Supabase project URL
-  SUPABASE_ANON_KEY: "YOUR-SUPABASE-ANON-KEY",               // TODO: Supabase anon (public) key
+  SUPABASE_URL: "https://zqyeihzjpfnvkrprcwam.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_s_KBg3jR_YBWAHetk7GX9w_JThGEvoa",
 
   // Loupe Station for Mac: the latest release in the public downloads repo.
   MAC_RELEASES_API: "https://api.github.com/repos/sambawy01/loupe-downloads/releases/latest",
