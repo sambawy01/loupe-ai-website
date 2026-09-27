@@ -152,16 +152,16 @@
 <h3>6.3 Google Safe Browsing (iPhone)</h3>
 <p>Uses <strong>your own</strong> Google API key. Your iPhone keeps Google's list of hash prefixes; only if a link matches it locally are <strong>4-byte hash prefixes</strong> sent to Google (Safe Browsing API v5) — never the link. Governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. (On Loupe Station this option is not yet available.)</p>
 <h3>6.4 Loupe Decision Model download</h3>
-<p>The decision model (about 418 MB) is downloaded once, after you agree, on iPhone from [MODEL HOST], which receives a normal download request (your IP address, device type). On Mac, the model is downloaded from Hugging Face (<a href="https://huggingface.co/privacy">privacy policy</a>) into <code>~/Library/Application Support/Loupe Station/models/hub</code>. Until a host is set, the iPhone app makes no request.</p>
+<p>The decision model (about 418 MB) is downloaded once, after you agree, on iPhone from Supabase Storage (Supabase, Inc.; <a href="https://supabase.com/privacy">privacy policy</a>), which receives a normal download request (your IP address, device type). On Mac, the model is downloaded from Hugging Face (<a href="https://huggingface.co/privacy">privacy policy</a>) into <code>~/Library/Application Support/Loupe Station/models/hub</code>. Until a host is set, the iPhone app makes no request.</p>
 <h3>6.5 Writing assistant (off by default)</h3>
 <p>If you configure an AI provider, Loupe can draft replies or give a second opinion. Before anything is sent you see <strong>exactly</strong> what will be sent (on iPhone: the one email's own text, or one item's text and your question) and the provider's name; nothing is sent until you tap Send. Drafts are labelled and wait for your approval; Loupe never sends mail on its own, and a reply is sent only after you review and approve that specific message. The text goes to <strong>the provider you chose, with your own key</strong>: for example DeepSeek, or any OpenAI-compatible service such as OpenAI or OpenRouter, whose own terms and privacy policy then apply. Or you can use a model on your own Mac or network (such as Ollama), in which case nothing leaves it. Loupe Station also uses this for question drafting, folder-scan explanations and social-post drafts, and warns when a feature reading your mail or files would leave your Mac. The assistant never makes Loupe's decisions.</p>
 <h3>6.6 App updates (Loupe Station)</h3>
 <p>Loupe Station checks for updates with Sparkle at <code>https://loupe-ai.com/updates/appcast.xml</code>; updates are EdDSA-signed and downloaded from <code>loupe-ai.com/download/</code>. No system profile is sent; our server sees your IP address and a User-Agent containing the app and Sparkle versions. The website and update feed are hosted on GitHub Pages (GitHub, Inc.), which may keep standard server logs under <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>. iPhone updates come through the App Store.</p>
 <h2>7. Data we hold</h2>
 <ul>
-<li>On our side: only the transient, in-memory helper data in 6.1, and emails you send to privacy@loupe-ai.com, which we keep for [RETENTION PERIOD] to answer you.</li>
+<li>On our side: only the transient, in-memory helper data in 6.1, and emails you send to privacy@loupe-ai.com, which we keep for up to 12 months after our last reply, then delete.</li>
 <li>We do not use cookies, analytics or trackers on loupe-ai.com.</li>
-<li>Apple (App Store, TestFlight) and Microsoft/Google (for your accounts) process data under their own policies; we may receive aggregated App Store or TestFlight statistics and crash reports <strong>only if you choose to share them with developers in your device settings</strong> [CONFIRM].</li>
+<li>Apple (App Store, TestFlight) and Microsoft/Google (for your accounts) process data under their own policies; we may receive aggregated App Store or TestFlight statistics and crash reports <strong>only if you choose to share them with developers in your device settings</strong> (Settings → Privacy &amp; Security → Analytics &amp; Improvements).</li>
 </ul>
 <h2>8. Retention and deletion</h2>
 <ul>
@@ -176,11 +176,11 @@
 <h2>10. Children</h2>
 <p>Loupe is not directed to children under 13 (under 16 in the EEA and UK, or the higher age where you live — see section 13). We do not knowingly collect children's data; in any case we receive none.</p>
 <h2>11. International transfers</h2>
-<p>Using Loupe offline involves no transfer. The optional online features send the minimum request data to the helper on Railway ([RAILWAY REGION], operated by Railway Corporation, a United States company) and on to the providers in section 6, which may be in other countries, including the United States and the EU. Where the law requires, we rely on [adequacy decisions / Standard Contractual Clauses / your explicit request for the service — LAWYER TO CONFIRM]. Providers you configure yourself (AI, Composio, Google) are chosen by you.</p>
+<p>Using Loupe offline involves no transfer. The optional online features send the minimum request data to the helper on Railway (US East, Virginia, operated by Railway Corporation, a United States company) and on to the providers in section 6, which may be in other countries, including the United States and the EU. Where the law requires a basis for this transfer, we rely on your request for the online feature you switched on and, where available, on adequacy decisions or the service providers' Standard Contractual Clauses. Providers you configure yourself (AI, Composio, Google) are chosen by you.</p>
 <h2>12. Your rights — what they mean here</h2>
 <p>Wherever you live, you control your Loupe data directly: see, correct, export (Export my data) or delete it on your device. Because we hold no account, profile or copy of your content, a request to us for access or deletion will usually find nothing to return; we will tell you so and explain what we checked. Helper data cannot be linked to you and is gone within hours. You can still contact privacy@loupe-ai.com; we answer within one month (or the shorter legal period). We will not discriminate against you for exercising rights. You may complain to your data protection authority.</p>
 <h2>13. Regional information</h2>
-<p>Legal grounds we rely on (where the law uses them): <strong>performance of a contract / providing the service you ask for</strong> for the online features you turn on; <strong>consent</strong> for sources and features you switch on (withdraw by switching off); <strong>legitimate interests</strong> for rate-limiting and security of the helper. [LAWYER TO CONFIRM PER REGION]</p>
+<p>Legal grounds we rely on (where the law uses them): <strong>performance of a contract / providing the service you ask for</strong> for the online features you turn on; <strong>consent</strong> for sources and features you switch on (withdraw by switching off); <strong>legitimate interests</strong> for rate-limiting and security of the helper.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -223,23 +223,23 @@
 <tr>
 <td><strong>Egypt</strong> — Law 151 of 2020</td>
 <td>know, access, correct, delete, object, be told of breaches</td>
-<td>[VERIFY — child defined as under 18 under Egyptian law]</td>
+<td>under 18 (a child under Egyptian law)</td>
 <td>Personal Data Protection Centre</td>
-<td>local licensing/representative: [VERIFY/DECIDE]</td>
+<td>we will obtain any licence or appoint any representative the law requires</td>
 </tr>
 <tr>
 <td><strong>Saudi Arabia</strong> — PDPL</td>
 <td>be informed, access, copy, correct, destroy</td>
-<td>[VERIFY — guardian consent for those lacking full capacity]</td>
+<td>a guardian's consent is needed for those without full legal capacity</td>
 <td>SDAIA</td>
-<td>local representative: [VERIFY/DECIDE]</td>
+<td>we will appoint a representative if the law requires one</td>
 </tr>
 <tr>
 <td><strong>UAE</strong> — Federal Decree-Law 45/2021</td>
 <td>access, portability, correction, erasure, restriction, objection</td>
-<td>[VERIFY]</td>
+<td>under 18 need a guardian's consent</td>
 <td>UAE Data Office</td>
-<td>[VERIFY/DECIDE]</td>
+<td>we will appoint a representative if the law requires one</td>
 </tr>
 <tr>
 <td><strong>Brazil</strong> — LGPD</td>
@@ -251,16 +251,16 @@
 <tr>
 <td><strong>Canada</strong> — PIPEDA (and Québec Law 25)</td>
 <td>access, correction, withdraw consent</td>
-<td>[VERIFY — 13 / 14 in Québec]</td>
+<td>under 13 (under 14 in Québec) need a guardian's consent</td>
 <td><a href="https://www.priv.gc.ca">Office of the Privacy Commissioner</a></td>
 <td>privacy officer: Hany Sadek (privacy@loupe-ai.com)</td>
 </tr>
 <tr>
 <td><strong>Australia</strong> — Privacy Act 1988</td>
 <td>access, correction (APPs 12–13)</td>
-<td>[VERIFY]</td>
+<td>assessed case by case; a guardian can act for a young child</td>
 <td><a href="https://www.oaic.gov.au">OAIC</a> (complain to us first)</td>
-<td>— (may be exempt as small business; [LAWYER TO CONFIRM])</td>
+<td>—</td>
 </tr>
 <tr>
 <td><strong>India</strong> — DPDP Act 2023</td>

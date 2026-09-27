@@ -30,7 +30,7 @@ Online features are optional and may be limited, changed or discontinued at any 
 To the fullest extent the law allows, Loupe is provided **"as is" and "as available"**, without warranties of any kind, including fitness for a particular purpose, accuracy and non-infringement.
 
 ## 9. Limitation of liability
-To the fullest extent the law allows, we are not liable for indirect, incidental, special or consequential losses, lost profits or lost data, or for losses caused by relying on Loupe's decisions or third-party data. Our total liability is limited to the greater of the amount you paid for Loupe in the 12 months before the claim or [AMOUNT, e.g. USD 50]. Nothing here limits liability that cannot be limited by law (such as for death or personal injury caused by negligence, or fraud), or your statutory rights as a consumer.
+To the fullest extent the law allows, we are not liable for indirect, incidental, special or consequential losses, lost profits or lost data, or for losses caused by relying on Loupe's decisions or third-party data. Our total liability is limited to the greater of the amount you paid for Loupe in the 12 months before the claim or USD 50. Nothing here limits liability that cannot be limited by law (such as for death or personal injury caused by negligence, or fraud), or your statutory rights as a consumer.
 
 ## 10. Termination
 You can stop using Loupe at any time by deleting it. We may end or suspend these terms or your access to online features if you break them. Sections 3, 8, 9 and 11 survive.
