@@ -329,14 +329,13 @@ def legal_html(lang, kind):
 def page_legal(lang, kind):
     title, content = legal_html(lang, kind)
     path = f"/{kind}/"
-    note = ("مسودة — قيد المراجعة القانونية. ليست سارية بعد. النسخة الإنجليزية هي المعتمدة." if lang == 'ar'
-            else "Draft — under legal review. Not yet in force.")
+    note = "النسخة الإنجليزية هي المعتمدة." if lang == 'ar' else ""
     sep = ("<p class=\"small\">التطبيقات لا تجمع شيئًا عنك؛ ما يحفظه الموقع (التسجيل وأعداد التنزيل) موضّح في قسم <a href=\"#website\">الموقع</a>.</p>" if lang == 'ar'
            else "<p class=\"small\">The apps collect nothing about you; what the website keeps (sign-ups and download counts) is set out separately in <a href=\"#website\">The website</a>.</p>") if kind == "privacy" else ""
     body = f"""{header(lang, path)}
 <main id="main">
 <section class="page-hero"><div class="wrap legal">
-<div class="draft" role="note"><span aria-hidden="true">⚠</span><span>{note}</span></div>
+{f'<p class="small">{note}</p>' if note else ''}
 <h1>{esc(title)}</h1>{sep}
 {content}
 </div></section>

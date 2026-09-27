@@ -1,7 +1,6 @@
 # Loupe Privacy Policy
 
-**Draft for review by a qualified lawyer. Not yet in force.**
-Effective date: 26 September 2026 · Applies to: Loupe for iPhone (`com.loupe-ai.ios`) and Loupe Station for Mac (`com.loupe-ai.desktop`)
+Effective date: 27 September 2026 · Applies to: Loupe for iPhone (`com.loupe-ai.ios`) and Loupe Station for Mac (`com.loupe-ai.desktop`)
 
 ## 1. Who we are
 

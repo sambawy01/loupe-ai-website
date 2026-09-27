@@ -1,7 +1,6 @@
 # Loupe Terms of Service
 
-**Draft for review by a qualified lawyer. Not yet in force.**
-Effective date: 26 September 2026 · Applies to: Loupe for iPhone (`com.loupe-ai.ios`) and Loupe Station for Mac (`com.loupe-ai.desktop`)
+Effective date: 27 September 2026 · Applies to: Loupe for iPhone (`com.loupe-ai.ios`) and Loupe Station for Mac (`com.loupe-ai.desktop`)
 
 These terms are an agreement between you and Hany Sadek, trading as Loupe ("we"), of Hurghada, Egypt. If Loupe later moves to a company, that company will take over these terms and we will tell you. By installing or using Loupe you agree to them. Our [Privacy Policy](https://loupe-ai.com/privacy) explains how data is handled.
 
